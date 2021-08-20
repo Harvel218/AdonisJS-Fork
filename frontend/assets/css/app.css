@@ -3,7 +3,7 @@
 html, body {
   background-color: #F7F8FA;
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   color: #46444c;
   position: relative;
 }
@@ -31,7 +31,7 @@ a {
 main {
   max-width: 620px;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 30px;
   align-items: center;
   display: flex;
