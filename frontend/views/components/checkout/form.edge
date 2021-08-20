@@ -1,0 +1,85 @@
+<form class="checkout__form js-checkout-form">
+    <header class="checkout__header">
+        <span>1</span>Personal information
+    </header>
+    <div class="checkout__form__section">
+        <div class="form__row form__row--double">
+            <div class="form__row--double--data-entry">
+                <label>
+                    <span>First name</span>
+                    <input type="text" placeholder="Elon" value="" name="first_name" required/>
+                </label>
+            </div>
+            <div class="form__row--double--data-entry">
+                <label>
+                    <span>Last name</span>
+                    <input type="text" placeholder="Musk" value="" name="last_name" required/>
+                </label>
+            </div>
+        </div>
+        <div class="form__row">
+            <div class="form__row--data-entry">
+                <label>
+                    <span>Email</span>
+                    <input type="email" placeholder="elon@spacex.com" value="" name="email" required/>
+                </label>
+            </div>
+        </div>
+        <div class="form__row form__row--double">
+            <div class="form__row--double--data-entry">
+                <label>
+                    <span>Country</span>
+                    <select name="country" required>
+                        <option value="united_states" selected>United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="norway">Norway</option>
+                        <option value="germany">Germany</option>
+                        <option value="poland">Poland</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row--double--data-entry">
+                <label>
+                    <span>Postal code</span>
+                    <input type="text" placeholder="10001" value="" name="postal_code" required/>
+                </label>
+            </div>
+        </div>
+        <div class="form__row">
+            <div class="form__row--data-entry">
+                <label>
+                    <span>Phone Number</span>
+                    <input type="tel" placeholder="(212) 692-93-92" value="" name="phone_number" required/>
+                </label>
+            </div>
+        </div>
+    </div>
+    <header class="checkout__header"><span>2</span>Payments details</header>
+    <div class="checkout__form__section">
+        <div class="form__row">
+            <div class="form__row--data-entry">
+                <label>
+                    <span>Credit Card Number</span>
+                    <input type="number" placeholder="0000-0000-0000-0000" value="" name="credit_card_number" required/>
+                </label>
+            </div>
+        </div>
+        <div class="form__row form__row--double">
+            <div class="form__row--double--data-entry">
+                <label>
+                    <span>Security code</span>
+                    <input type="password" placeholder="***" value="" name="security_code" required/>
+                </label>
+            </div>
+            <div class="form__row--double--data-entry">
+                <label>
+                    <span>Expiration date</span>
+                    <input type="text" placeholder="MM / YY" value="" name="expiration_date" required/>
+                </label>
+            </div>
+        </div>
+        <div class="form__row">
+            <button type="button" class="checkout__form__button js-checkout-submit">Complete purchase</button>
+        </div>
+    </div>
+</form>

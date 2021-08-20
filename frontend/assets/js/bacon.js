@@ -1,5 +1,5 @@
 const baconContainer = document.querySelector('.js-bacon')
-const moreBaconBtn = baconContainer.querySelector('button')
+const moreBaconBtn = baconContainer?.querySelector('button')
 
 const cloneElement = (element) => {
   const clone = element.cloneNode(true)
@@ -8,9 +8,11 @@ const cloneElement = (element) => {
 
 const createMoreBacon = () => {
   moreBaconBtn.addEventListener('click', () => {
-    const baconImage = baconContainer.querySelector('img')
-    cloneElement(baconImage)
+    const bacon = baconContainer.querySelector('img')
+    cloneElement(bacon)
   })
 }
 
-createMoreBacon()
+if (baconContainer && moreBaconBtn) {
+  createMoreBacon()
+}

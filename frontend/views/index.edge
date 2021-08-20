@@ -1,8 +1,9 @@
 @layout('layouts/main')
-@set('title', 'Home page')
+@set('title', 'Tesla checkout')
 
 @section('body')
-  @!component('components/welcome', {
-    source: 'resources/views/index.edge'
-  })
+<section class="checkout">
+  @!component('components/checkout/form')
+  @!component('components/checkout/order')
+</section>
 @end
